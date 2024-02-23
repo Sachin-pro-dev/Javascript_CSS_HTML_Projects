@@ -1,0 +1,123 @@
+* {
+  transition: all 0.5s ease;
+}
+body {
+  background: black;
+  background: linear-gradient(45deg, teal, black);
+}
+#container {
+  width: 95vw;
+  /* height: 550px; */
+  height: 93vh;
+  /* background-image: linear-gradient(
+              rgba(0, 0, 0, 0.3),
+              rgba(0, 0, 0, 0.3)
+            ),
+            url(media/lycorisrecoil.png); */
+  margin: 20px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+h1 {
+  position: absolute;
+  top: 0;
+  /* background: linear-gradient(45deg, purple, aqua, darkviolet, pink); */
+  background: linear-gradient(45deg, teal, aqua, orange);
+  background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);
+  -webkit-background-clip: text;
+  color: grey;
+  font-size: 35px;
+  text-shadow: 1px 1px 5px aqua;
+}
+h1:hover{
+  text-shadow: 0px 0px 0px aqua;
+
+}
+#calculator {
+  width: 320px;
+  height: 520px;
+  background: #eaede1;
+  position: relative;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+#result {
+  height: 120px;
+}
+#history {
+  text-align: right;
+  height: 20px;
+  margin: 0 20px;
+  padding-top: 20px;
+  font-size: 15px;
+  color: #919191;
+}
+#output {
+  text-align: right;
+  height: 60px;
+  margin: 10px 20px;
+  font-size: 30px;
+}
+#keyboard {
+  height: 400px;
+}
+.operator {
+  background: rgb(211, 211, 211);
+}
+.operator:hover {
+  transform: scale(1.1);
+}
+.number:hover {
+  /* transform: scale(1.3); */
+  font-weight: 900;
+}
+.operator,
+.number,
+.empty {
+  width: 50px;
+  height: 50px;
+  margin: 15px;
+  float: left;
+  border-radius: 50%;
+  border-width: 0;
+  font-weight: bold;
+  font-size: 15px;
+}
+.number,
+.empty {
+  background-color: #eaede1;
+}
+.number,
+.operator {
+  cursor: pointer;
+}
+.operator:active,
+.number:active {
+  font-size: 13px;
+}
+.operator:focus,
+.number:focus,
+.empty:focus {
+  outline: 0;
+}
+button:nth-child(4) {
+  font-size: 20px;
+  background-color: #20b2aa;
+}
+button:nth-child(8) {
+  font-size: 20px;
+  background-color: #ffa500;
+}
+button:nth-child(12) {
+  font-size: 20px;
+  background-color: #f08080;
+}
+button:nth-child(16) {
+  font-size: 20px;
+  background-color: #7d93e0;
+}
+button:nth-child(20) {
+  font-size: 20px;
+  background-color: #9477af;
+}

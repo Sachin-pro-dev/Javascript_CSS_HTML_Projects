@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <link rel="stylesheet" href="calculator2.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="display">
+        <input id="screen" type="text" placeholder="0" />
+      </div>
+      <div class="btns">
+        <div class="row">
+          <button id="ce" onclick="backspc()">CE</button>
+          <button id="operatorx" onclick="fact()">X!</button>
+          <button id="operator(" class="btn">(</button>
+          <button id="operator)" class="btn">)</button>
+          <button id="operatorrema" class="btn">%</button>
+          <button id="ac" onclick="screen.value=''">AC</button>
+          <button class="empty"></button>
+        </div>
+        <div class="row">
+          <button id="operatorsin" onclick="sin()">sin</button>
+          <button id="operatorpi" onclick="pi()">π</button>
+          <button id="number7" class="btn">7</button>
+          <button id="number8" class="btn">8</button>
+          <button id="number9" class="btn">9</button>
+          <button id="operatordiv" class="btn">÷</button>
+        </div>
+        <div class="row">
+          <button id="operatorcos" onclick="cos()">cos</button>
+          <button id="operatorlog" onclick="log()">log</button>
+          <button id="number4" class="btn">4</button>
+          <button id="number5" class="btn">5</button>
+          <button id="number6" class="btn">6</button>
+          <button id="operatormul" class="btn">*</button>
+        </div>
+        <div class="row">
+          <button id="operatortan" onclick="tan()">tan</button>
+          <button id="operatorsqrt" onclick="sqrt()">√</button>
+          <button id="number1" class="btn">1</button>
+          <button id="number2" class="btn">2</button>
+          <button id="number3" class="btn">3</button>
+          <button id="operatoemin" class="btn">-</button>
+        </div>
+        <div class="row">
+          <button id="operatore" onclick="e()">e</button>
+          <button id="operatorPOW" onclick="pow()">
+            x
+            <span style="position: relative; bottom: 0.4em; right: 0.1em"
+              >y</span
+            >
+          </button>
+          <button id="operatordot" class="btn">.</button>
+          <button id="number0" class="btn">0</button>
+          <button id="eval" onclick="screen.value=eval(screen.value)">=</button>
+          <button id="operatorplus" class="btn">+</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="calculator2.js"></script>
+  </body>
+</html>

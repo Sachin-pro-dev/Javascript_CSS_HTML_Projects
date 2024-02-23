@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rgba to Hex</title>
+  </head>
+  <link rel="stylesheet" href="HexRgba.css" />
+  <body>
+    <div id="container">
+      <table>
+        <tr>
+          <th>Red</th>
+          <th>Green</th>
+          <th>Blue</th>
+        </tr>
+        <tr>
+          <td>
+            <input
+              type="range"
+              min="0"
+              max="255"
+              value="255"
+              id="r"
+              onchange="changeRange()"
+            />
+          </td>
+
+          <td>
+            <input
+              type="range"
+              min="0"
+              max="255"
+              value="255"
+              id="g"
+              onchange="changeRange()"
+            />
+          </td>
+
+          <td>
+            <input
+              type="range"
+              min="0"
+              max="255"
+              value="255"
+              id="b"
+              onchange="changeRange()"
+            />
+          </td>
+        </tr>
+        <tr>
+          <td id="r-label" contenteditable="true">255</td>
+          <td id="g-label">255</td>
+          <td id="b-label">255</td>
+        </tr>
+      </table>
+      <h1 id="hex-label">#ffffff</h1>
+    </div>
+    <script src="HexRgba.js"></script>
+  </body>
+</html>
